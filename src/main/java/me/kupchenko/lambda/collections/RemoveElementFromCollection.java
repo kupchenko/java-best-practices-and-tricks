@@ -1,7 +1,7 @@
 package me.kupchenko.lambda.collections;
 
 import me.kupchenko.model.QualityAnnotations.Good;
-import me.kupchenko.model.QualityAnnotations.CabBeBetter;
+import me.kupchenko.model.QualityAnnotations.Ugly;
 import me.kupchenko.model.Permission;
 import me.kupchenko.model.User;
 
@@ -12,7 +12,7 @@ import java.util.Set;
 public class RemoveElementFromCollection {
     private final Set<User> users = new HashSet<>();
 
-    @CabBeBetter
+    @Ugly
     class ManuallyRemoveElementWithIteratorRemove {
         public void removeUsersWithPermission(Permission permission) {
             Iterator<User> iterator = users.iterator();

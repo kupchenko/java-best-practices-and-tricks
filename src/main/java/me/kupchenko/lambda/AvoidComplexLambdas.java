@@ -1,7 +1,7 @@
 package me.kupchenko.lambda;
 
 import me.kupchenko.model.QualityAnnotations.Good;
-import me.kupchenko.model.QualityAnnotations.CabBeBetter;
+import me.kupchenko.model.QualityAnnotations.Ugly;
 import me.kupchenko.model.Permission;
 import me.kupchenko.model.Role;
 import me.kupchenko.model.User;
@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.toSet;
 public class AvoidComplexLambdas {
     private final Set<User> users = new HashSet<>();
 
-    @CabBeBetter("Nested lambdas can be extracted")
+    @Ugly("Nested lambdas can be extracted")
     class UsingComplexLambdaInPlace {
         public Set<User> findEditors() {
             return users.stream()

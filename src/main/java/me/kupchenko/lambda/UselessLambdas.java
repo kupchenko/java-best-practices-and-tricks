@@ -1,13 +1,13 @@
 package me.kupchenko.lambda;
 
 import me.kupchenko.model.QualityAnnotations.Good;
-import me.kupchenko.model.QualityAnnotations.CabBeBetter;
+import me.kupchenko.model.QualityAnnotations.Ugly;
 
 import java.util.Optional;
 
 public class UselessLambdas {
 
-    @CabBeBetter("Lambdas are not always the best option")
+    @Ugly("Lambdas are not always the best option")
     class UnneededLambdasUsage {
         public void processAndPrint(String name) {
             Optional.ofNullable(name)

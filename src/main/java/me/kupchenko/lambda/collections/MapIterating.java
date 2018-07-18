@@ -1,7 +1,7 @@
 package me.kupchenko.lambda.collections;
 
 import me.kupchenko.model.QualityAnnotations.Good;
-import me.kupchenko.model.QualityAnnotations.CabBeBetter;
+import me.kupchenko.model.QualityAnnotations.Ugly;
 import me.kupchenko.model.User;
 
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.toMap;
 
 public class MapIterating {
 
-    @CabBeBetter("Loop over entrySet requires .getKey() and .getValue()")
+    @Ugly("Loop over entrySet requires .getKey() and .getValue()")
     class UsingOldGoodEntrySet {
         public Map<String, String> getUserNames(Map<String, User> users) {
             Map<String, String> userNames = new HashMap<>();

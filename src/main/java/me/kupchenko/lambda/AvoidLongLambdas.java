@@ -1,7 +1,7 @@
 package me.kupchenko.lambda;
 
 import me.kupchenko.model.QualityAnnotations.Good;
-import me.kupchenko.model.QualityAnnotations.CabBeBetter;
+import me.kupchenko.model.QualityAnnotations.Ugly;
 import me.kupchenko.model.User;
 import me.kupchenko.model.dto.UserDto;
 
@@ -11,7 +11,7 @@ import java.util.function.Function;
 import static java.util.stream.Collectors.toList;
 
 public class AvoidLongLambdas {
-    @CabBeBetter
+    @Ugly
     class LongLambdaInPlace {
         public List<UserDto> convertToDto(List<User> users){
             return users.stream()

@@ -1,7 +1,7 @@
 package me.kupchenko.lambda.collections;
 
 import me.kupchenko.model.QualityAnnotations.Good;
-import me.kupchenko.model.QualityAnnotations.CabBeBetter;
+import me.kupchenko.model.QualityAnnotations.Ugly;
 import me.kupchenko.model.User;
 
 import java.util.*;
@@ -10,7 +10,7 @@ import java.util.*;
 public class EmulateMultimap {
     private final Map<String, Set<User>> usersByRoleName = new HashMap<>();
 
-    @CabBeBetter("Code is not very readable, null check when retrieve set from map and " +
+    @Ugly("Code is not very readable, null check when retrieve set from map and " +
             "when trying to add item to set in map")
     class LegacyCreationOnFirstValueForTheKey {
         public void addUser(User user) {

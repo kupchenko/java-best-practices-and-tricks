@@ -1,14 +1,14 @@
 package me.kupchenko.lambda;
 
 import me.kupchenko.model.QualityAnnotations.Good;
-import me.kupchenko.model.QualityAnnotations.CabBeBetter;
+import me.kupchenko.model.QualityAnnotations.Ugly;
 import me.kupchenko.model.User;
 
 import java.util.Set;
 import java.util.function.Supplier;
 
 public class LazyCalculationsImprovePerformance {
-    @CabBeBetter
+    @Ugly
     static class LoggingWithAdditionalCheckToAvoidCalculations {
         private static final Log LOG = null; // init logger with factory
 
