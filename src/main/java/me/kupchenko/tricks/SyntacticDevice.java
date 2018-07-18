@@ -1,5 +1,7 @@
 package me.kupchenko.tricks;
 
+import me.kupchenko.model.New;
+
 public class SyntacticDevice {
 
     class Person implements Comparable<Person> {
@@ -7,7 +9,7 @@ public class SyntacticDevice {
         private Long age;
 
         @Override
-        public int compareTo(Person this, Person o) {
+        public int compareTo(@New("Now you can annotate parameter")Person this, Person o) {
             return this.age.compareTo(o.age);
         }
     }
