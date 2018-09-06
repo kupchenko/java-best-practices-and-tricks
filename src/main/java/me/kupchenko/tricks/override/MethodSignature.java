@@ -1,4 +1,4 @@
-package me.kupchenko.override;
+package me.kupchenko.tricks.override;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package me.kupchenko.thread;
+package me.kupchenko.tricks.thread;
 
 public class SynchronizationOnThread {
     private final static Thread thread = new Thread(()-> System.out.println("Hello there!!!"));

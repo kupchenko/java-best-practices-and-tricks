@@ -1,4 +1,4 @@
-package me.kupchenko.numbers;
+package me.kupchenko.tricks.numbers;
 
 
 import java.lang.reflect.Field;
