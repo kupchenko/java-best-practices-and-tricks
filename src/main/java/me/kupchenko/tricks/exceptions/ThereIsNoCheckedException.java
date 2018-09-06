@@ -1,4 +1,4 @@
-package me.kupchenko.tricks;
+package me.kupchenko.tricks.exceptions;
 
 import java.sql.SQLException;
 
